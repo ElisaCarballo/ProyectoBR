@@ -192,7 +192,9 @@
                 <legend>Vendedor</legend>
 
                 <select name="vendedor">
-                    <option value="">-- Seleccione --</option>
+                    <option value="1">-- Elisa --</option>
+                    <option value="2">-- Gael --</option>
+                    <option value="3">-- Hiram --</option>
                     <?php while($vendedor =  mysqli_fetch_assoc($resultado) ) : ?>
                         <option  <?php echo $vendedorId === $vendedor['id'] ? 'selected' : ''; ?>   value="<?php echo $vendedor['id']; ?>"> <?php echo $vendedor['nombre'] . " " . $vendedor['apellido']; ?> </option>
                     <?php endwhile; ?>
